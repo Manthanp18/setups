@@ -1,7 +1,22 @@
-import '../styles/globals.css'
+import { ChakraProvider } from '@chakra-ui/react'
+import PropTypes from 'prop-types'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import Head from '../components/Head'
+import theme from '../styles/theme'
+
+export default function MyApp ({ Component, pageProps }) {
+  return (
+    <ChakraProvider theme={theme}>
+      <Head
+        title='Setups'
+        description='Easily view workstations and gaming setups from reddit'
+      />
+      <Component {...pageProps} />
+    </ChakraProvider>
+  )
 }
 
-export default MyApp
+MyApp.propTypes = {
+  Component: PropTypes.elementType.isRequired,
+  pageProps: PropTypes.object
+}

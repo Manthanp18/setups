@@ -1,5 +1,5 @@
 {
-  "name": "nextjs",
+  "name": "justsetups",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,18 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "10.0.0",
+    "@chakra-ui/icons": "^1.0.1",
+    "@chakra-ui/react": "^1.0.1",
+    "@emotion/react": "^11.1.1",
+    "@emotion/styled": "^11.0.0",
+    "dayjs": "^1.9.6",
+    "framer-motion": "^2.9.5",
+    "next": "10.0.3",
+    "next-pwa": "^3.1.5",
+    "prop-types": "^15.7.2",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-responsive-carousel": "^3.2.10",
+    "swr": "^0.3.9"
   }
 }
